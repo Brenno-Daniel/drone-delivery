@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <Filters />
+    <List :lists="lists" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Filters from '@/components/Filters.vue';
+import List from '@/components/List.vue';
+import api from '@/mixins/api';
 
 @Component({
   components: {
-    HelloWorld,
+    Filters,
+    List,
   },
+  mixins: [api],
 })
 export default class Home extends Vue {}
 </script>
