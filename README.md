@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# teste-solucx
+
+# drone-delivery
 
 ## Project setup
 ```
@@ -28,6 +28,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# drone-delivery
->>>>>>> 402988b085b09d5a5f0a31a8b5ab7728fcdfaaf3
+
