@@ -15,7 +15,6 @@ export default Vue.extend({
       fetch(this.api)
         .then((response) => response.json())
         .then((response) => {
-          console.log(response);
           this.lists = response;
         });
     },

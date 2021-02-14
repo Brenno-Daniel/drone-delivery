@@ -1,7 +1,8 @@
 <template>
   <div>
     <Filters />
-    <List :lists="lists" />
+    <List :lists="lists"
+    @get-details="getDetails"/>
   </div>
 </template>
 
@@ -17,6 +18,16 @@ import api from '@/mixins/api';
     List,
   },
   mixins: [api],
+  methods: {
+    getDetails(id) {
+      this.$router.push({
+        name: 'DroneDescription',
+        query: {
+          id,
+        },
+      });
+    },
+  },
 })
 export default class Home extends Vue {}
 </script>
